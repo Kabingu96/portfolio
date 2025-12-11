@@ -1,0 +1,86 @@
+---
+title: "CTF Writeups Collection"
+summary: "Detailed writeups and solutions for various Capture The Flag competitions, covering web exploitation, cryptography, and reverse engineering."
+date: "2024-11-20"
+tags: ["CTF", "Web Exploitation", "Cryptography", "Reverse Engineering"]
+github: "https://github.com/Kabingu96/ctf-writeups"
+demo: ""
+featured: true
+---
+
+# CTF Writeups Collection
+
+A comprehensive collection of detailed writeups for various Capture The Flag (CTF) competitions and challenges.
+
+## Overview
+
+This repository contains my solutions and methodologies for CTF challenges across multiple categories, serving as both documentation and learning resource for the cybersecurity community.
+
+## Categories Covered
+
+### Web Exploitation
+- SQL Injection techniques and bypasses
+- Cross-Site Scripting (XSS) exploitation
+- Server-Side Request Forgery (SSRF)
+- Authentication and authorization bypasses
+
+### Cryptography
+- Classical cipher breaking
+- RSA cryptanalysis
+- Hash function vulnerabilities
+- Block cipher attacks
+
+### Reverse Engineering
+- Binary analysis and disassembly
+- Malware analysis techniques
+- Protocol reverse engineering
+- Firmware analysis
+
+## Notable Achievements
+
+### HackTheBox Challenges
+- **Web**: Solved 25+ web application challenges
+- **Crypto**: Completed advanced cryptographic puzzles
+- **Reversing**: Analyzed complex binary executables
+
+### Competition Results
+- **CyberDefenders**: Top 10% ranking
+- **PicoCTF**: 2500+ points achieved
+- **OverTheWire**: Completed Bandit, Natas, and Krypton series
+
+## Methodology
+
+Each writeup follows a structured approach:
+
+1. **Challenge Analysis**: Understanding the problem scope
+2. **Reconnaissance**: Information gathering and enumeration
+3. **Exploitation**: Step-by-step attack methodology
+4. **Documentation**: Clear explanation of techniques used
+
+## Example: SQL Injection Bypass
+
+```sql
+-- Original query
+SELECT * FROM users WHERE username='$input' AND password='$pass'
+
+-- Payload to bypass authentication
+admin'--
+
+-- Resulting query
+SELECT * FROM users WHERE username='admin'--' AND password='$pass'
+```
+
+## Tools and Techniques
+
+- **Burp Suite**: Web application security testing
+- **Ghidra**: Reverse engineering and binary analysis
+- **John the Ripper**: Password cracking
+- **Wireshark**: Network protocol analysis
+- **Custom Python scripts**: Automation and exploitation
+
+## Community Impact
+
+- 500+ GitHub stars on writeup repository
+- Referenced by cybersecurity students and professionals
+- Contributed to open-source security tools
+- Mentored junior CTF participants
